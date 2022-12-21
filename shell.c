@@ -35,14 +35,14 @@ int main(void)
 			continue;
 		}
 
-		if (strcmp(buff[0], "exit") == 0)
+		if (_strcmp(buff[0], "exit") == 0)
 		{
 			free(buff);
-			free(buffer);
+			cfree(buffer);
 			return (command);
 		}
 
-		if (strcmp(buff[0], "env") == 0)
+		if (_strcmp(buff[0], "env") == 0)
 		{
 			_env();
 			continue;
