@@ -1,1 +1,58 @@
-man for simple shell
+.\" Manpage for simple_shell.
+
+.TH simple_shell "1.0" "21 Dic 2022"
+
+.SH NAME
+	Man 1_simple_shell
+
+.SH SYNOPSIS
+	$ - [COMMAND][ARGUMENT]
+		Manual of the Simple Shell.
+
+.SH DESCRIPTION
+	The Shell is an interface to Unix systems, that 
+    runs programs based on these systems. And the simple 
+    shell is the simple implementation of a shell for Unix 
+    operating systems.
+
+.SH COMPILING
+
+    gcc -Wall -Werror -pedantic -std=gnu89 *.c -o hsh
+
+.SH HOW TO USE
+
+.B Interactive Mode
+
+	$ ./hsh
+	($) /bin/ls
+	hsh main.c shell.c
+	($)
+	($) exit
+	$
+
+.B Non-Interactive Mode
+
+	$ echo "/bin/ls" | ./hsh
+	hsh main.c shell.c test_ls_2
+	$
+	$ cat test_ls_2
+	/bin/ls
+	/bin/ls
+	$
+	$ cat test_ls_2 | ./hsh
+	hsh main.c shell.c test_ls_2
+	hsh main.c shell.c test_ls_2
+	$
+
+.SH BUGS
+	There are no known bugs.
+	If you find an error please contact the author
+	for their respective review and correction.
+    
+    NOTE: note this program is incomplete.
+    The complete program with some corrections
+    will be uploaded soon.
+
+.SH AUTHORS
+	Jacinto Gutierrez Cantillo <5843@holbertonstudents.com>
+	...
