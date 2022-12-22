@@ -10,7 +10,7 @@ int _env(void)
 	char **env;
 	int len;
 
-	*env = *environ;
+	env = environ;
 
 	for (len = 0; env[len]; len++)
 		printf("%s\n", env[len]);
