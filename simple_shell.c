@@ -33,7 +33,7 @@ int main(void)
 		if (_strcmp(buff[0], "exit") == 0)
 		{
 			free(buff);
-			cfree(buffer);
+			free(buffer);
 			return (command);
 		}
 		if (_strcmp(buff[0], "env") == 0)

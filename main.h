@@ -8,11 +8,14 @@
 #include <signal.h>
 #include <sys/wait.h>
 
+extern char **environ;
+
 int main(void);
 int _env(void);
 int prompt(void);
-int functions(char **args);
 void ctrl_d(int sign);
+int functions(char **args);
 char **_tokenizer(char *buffer);
+int _strcmp(char *s1, char *s2);
 
 #endif
