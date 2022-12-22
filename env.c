@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _env - Print the envirion 
- * Return: Return 0 everytime. 
+ * _env - Print the envirion.
+ * Return: Return 0 everytime.
 */
 
 int _env(void)
