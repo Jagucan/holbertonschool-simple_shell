@@ -7,11 +7,13 @@
 
 int _env(void)
 {
-	extern char **environ;
+	char **env;
 	int len;
 
-	for (len = 0; environ[len]; len++)
-		printf("%s\n", environ[len]);
+	*env = *environ;
+
+	for (len = 0; env[len]; len++)
+		printf("%s\n", env[len]);
 
 	return (0);
 }

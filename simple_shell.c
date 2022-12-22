@@ -12,7 +12,7 @@ int main(void)
 	ssize_t command = 0;
 	size_t size = 0;
 
-	buffer = (char *) malloc(sizeof(char*) * size);
+	buffer = (char *) malloc(sizeof(char *) * size);
 	if (!buffer)
 		return (0);
 	while (1)

@@ -19,7 +19,7 @@ char **_tokenizer(char *buffer)
 	if (!token)
 		return (NULL);
 
-	for (size = 0; token != NULL; 	size++)
+	for (size = 0; token != NULL; size++)
 	{
 		buff[size] = token;
 		token = strtok(NULL, "\n");
